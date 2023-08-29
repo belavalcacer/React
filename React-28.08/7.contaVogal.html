@@ -1,0 +1,21 @@
+<html>
+    <head>
+
+    </head>
+
+    <script>
+        function contaVogal(string) {
+            var cont = 0;
+            string=string.toLowerCase();
+            for(var i=0; i<string.length; i++){
+                if (string.charAt(i) == 'a' || string.charAt(i) == 'e' || string.charAt(i) == 'o' || string.charAt(i) == 'u') {
+                    cont++
+                }      
+            }
+            return cont;
+        }
+        let string = window.prompt('Digite a palavra: ')
+        window.alert(` A quantidade de vogais em ${string} eh ${contaVogal(string)}`)
+
+    </script>
+</html>
